@@ -1,6 +1,6 @@
 h1,
 h3 {
-    color: #ff9f9f;
+    color: black;
     font-family: 'Trirong', serif;
 }
 
@@ -32,11 +32,11 @@ body {
 }
 
 .sidebar a:hover {
-    color: black;
+    color: lightpink;
 }
 
 .sidebar a {
-    color: #ff9f9f;
+    color: black;
     text-decoration: none;
     padding: 30px;
     font-family: 'Trirong', serif;
@@ -48,7 +48,7 @@ body {
 
 .intro {
     font-family: 'Tangerine', cursive;
-    color: #ff9f9f;
+    color: black;
     text-decoration: none;
     font-size: 50px;
     font-weight: bold;
@@ -59,7 +59,7 @@ body {
 
 .intro a {
     font-family: 'Tangerine', cursive;
-    color: #ff9f9f;
+    color: black;
     text-decoration: none;
 }
 
@@ -111,7 +111,7 @@ p.about {
 
 #slide {
     font-family: 'Tangerine', cursive;
-    color: #ff9f9f;
+    color: black;
     font-size: 100px;
     font-weight: bold;
     animation-duration: 2s;
