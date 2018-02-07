@@ -1,18 +1,12 @@
-h1,
+h1 {
+    font-family: 'Trirong', serif;
+    color: black;
+}
+
 h2,
 h3 {
-    color: black;
+    color: cadetblue;
     font-family: 'Trirong', serif;
-}
-
-.category {
-    border: 1px solid;
-    border-color: #afafaf;
-}
-
-.categorytwo {
-    border: 1px solid;
-    border-color: #afafaf;
 }
 
 .bio {
@@ -85,12 +79,13 @@ body {
     margin-left: 0;
 }
 
-img.left {
+
+/*img.left {
     padding-left: 18px;
     padding-right: 18px;
     margin-bottom: 0;
     float: left;
-}
+}*/
 
 p.about {
     padding: 0;
@@ -150,7 +145,8 @@ canvas {
 
 @media screen and (max-width: 736px) {
     .sidebar a {
-        padding: 0;
+        margin-right: -33%;
+        font-size: 12px
     }
     .header {
         padding-bottom: 40%;

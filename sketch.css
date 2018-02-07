@@ -1,0 +1,48 @@
+/*board*/
+
+.container {
+    display: grid;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    border: 3px solid;
+    border-radius: 7px;
+    grid-template-columns: repeat(var(--columnNumber), 1fr);
+}
+
+
+/*grids */
+
+.square {
+    display: block;
+}
+
+
+/*whole webpage */
+
+h1 {
+    color: black;
+}
+
+body {
+    background: white;
+}
+
+
+/* buttons */
+
+#resetgrid,
+#erase,
+#random {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 15px 32px;
+}
+
+#resetgrid:hover,
+#erase:hover,
+#random:hover {
+    background: darkred;
+}
