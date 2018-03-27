@@ -1,104 +1,86 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 
 <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Required meta tags -->
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!--Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- designedbysadaf -->
 
     <link rel="stylesheet" href="style.css">
-    <!-- designedbysadaf -->
 
     <title>Prototype</title>
 </head>
 
-<header>
-    <!--logo -->
-
-
-    <h1 class="headertext"> LOGO / TITLE / NAME </h1>
-    <!--summary of what azmeena does -->
-
-    <h3 id="snippet"> Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Proin finibus.</h3>
-
-    <br>
-    <br>
-
-</header>
-
 <body>
-    <!--Navigation-->
+    <div class="container">
+        <header>
+            <!--Mobile Navigation-->
+            <div id="mySidenav" class="sidenav">
 
-    <div class="container text-center">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Work</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
 
+            </div>
 
-        <ul>WORK </ul>
-        <ul> SERVICES </ul>
-        <ul> ABOUT </ul>
+            <span style="font-size:40px;cursor:pointer;float:right;" onclick="openNav()">&#9776;</span>
+            <!--logo -->
+            <h1 class="headertext"> LOGO / TITLE / NAME </h1>
 
-        <ul>CONTACT </ul>
+            <!--summary of what the website is about/what the author does -->
+            <h3 id="summary"> Lorem ipsum dolor sit amet,consectetur adipiscing elit. Proin finibus.</h3>
 
+        </header>
 
+        <br>
+        <br>
         <!--Work-->
-        <div class="work-container">
-            <h4 style="text-decoration:underline;font-weight: 200;  letter-spacing: .1em;"> Work </h4>
+        <!--Stock photos are from freephotos.cc-->
+        <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center"> Work </h4>
+
+        <img src="images/workimg1.jpg" alt="workimg1" style="width:300px;height:300px;" class="img-thumbnail">
+
+        <img src="images/workimg2.jpg" alt="workimg2" style="width:300px;height:300px;" class="img-thumbnail">
 
 
-            <h1 class="square1">WORK IMAGE 1
-            </h1>
+        <img src="images/workimg3.jpg" alt="workimg3" style="width:300px;height:300px;" class="img-thumbnail">
 
 
-            <h1 class="square2">WORK IMAGE 2 </h1>
 
-            <h1 class="square3">WORK IMAGE 3
-            </h1>
-
-
-            <h1 class="square4"> WORK IMAGE 4
-            </h1>
-
-            <!--
-            <h1 class="square5"> WORK IMAGE 5
-            </h1>
--->
-        </div>
-    </div>
-    <!--Services-->
-
-    <div class="services-container text-center">
-
-
-        <h4 style="text-decoration:underline;font-weight: 200;  letter-spacing: .1em;"> Services </h4>
-
-        <h3 style="font-weight: 100">Lorem ipsum dolor sit amet, consectetur</h3>
-
-        <br>
-        <p id="servicespara">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vestibulum sed sem imperdiet, elementum quam eu, convallis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada arcu at lacus lacinia auctor. Aenean vel nisl elit. Vivamus
-            eget leo sem. Nunc at nunc eu lacus semper elementum nec et orci. Pellentesque commodo lobortis nibh, et venenatis ex dictum a. In mi metus, iaculis vitae eros in, sodales tempus tellus. Pellentesque maximus et lectus vel venenatis. Aliquam
-            sit amet mi sit amet nunc mollis sagittis. Maecenas eget viverra arcu.
-
-        </p>
-        <br>
-
-        <ul> BRAND STRATEGY </ul>
-        <ul>PRIMARY LOGO </ul>
-        <ul>SECONDARY LOGO </ul>
         <br><br><br>
+        <!--Services-->
 
-        <!--Contact Form -->
+        <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em;text-align:center;"> Services </h4>
+
+        <h3 style="font-weight: 100; text-align:center;">
+            Lorem ipsum dolor sit amet, consectetur</h3>
+        <br>
+        <ul>
+            <li> BRAND STRATEGY </li>
+            <li>PRIMARY LOGO </li>
+            <li>SECONDARY LOGO </li>
+
+        </ul>
+
+        <br>
+        <br>
+
+        <!--Contact-->
+
         <div class="contact-container text-center">
             <h4 style="text-decoration:underline;font-weight: 200;  letter-spacing: .1em;"> Contact </h4>
             <form>
@@ -117,7 +99,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <input type="text" class="form-control" id="inputCity" placeholder="City">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputState">State</label>
@@ -128,7 +110,7 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" class="form-control" id="inputZip" placeholder=Zip "">
                     </div>
                 </div>
                 <div class="form-group">
@@ -146,47 +128,44 @@
 
     </div>
 
-    <br><br>
-
-
-
-
+    <br><br><br>
     <!--About-->
-    <div class="container text-center">
-        <h4 style="text-decoration:underline;font-weight: 200;  letter-spacing: .1em;"> About </h4>
-
-
-        <h1 class="imageofauthor"> IMAGE OF AUTHOR </h1>
-
-
-        <p>
-            <h5 style="display:inline-block;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-            </h5>
-        </p>
+    <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center"> About</h4>
+    <center>
+        <img src="images/aboutimg.jpg" alt="aboutimg" style="width:800px;height:600px;" class="img-fluid">
+    </center>
+    <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+        content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
     </div>
+
+
+    <footer>
+
+        <div class="footertext text-center">
+
+
+            <br>
+            <i class="fa fa-facebook-official" style="font-size:36px"></i>
+            <i class="fa fa-twitter" style="font-size:36px"></i>
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+
+
+            <br>
+            <br> designedbysadaf 2018
+
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
-<footer>
-
-    <div class="footertext text-center">
-
-
-        <br>
-        <i class="fa fa-facebook-official" style="font-size:36px"></i>
-        <i class="fa fa-twitter" style="font-size:36px"></i>
-        <i class="fa fa-instagram" style="font-size:36px"></i>
-
-
-        <br>
-        <br> Website designedbysadaf 2018
-
-    </div>
-</footer>
-
 
 </html>
