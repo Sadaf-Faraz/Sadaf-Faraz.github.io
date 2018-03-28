@@ -1,6 +1,13 @@
-h1 {
-    font-family: 'Trirong', serif;
-    color: black;
+#headerText {
+    font-family: 'Trirong', cursive;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+}
+
+#construction {
+    text-align: center;
+    padding: 20px;
 }
 
 h2,
