@@ -1,11 +1,29 @@
+.topsection {
+    background-color: #e7c17c;
+    color: white;
+    border-radius: 5px;
+}
+
 .headertext {
     font-weight: 100;
     text-align: center;
+    color: lightslategray;
 }
 
-#summary {
+.afterheadertext {
     text-align: center;
     font-weight: 100;
+}
+
+.menustyle {
+    background-color: lightslategray;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.menustyle a {
+    text-decoration: none;
+    color: white;
 }
 
 .sidenav {
@@ -14,7 +32,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: lightslategray;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -25,15 +43,15 @@
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-weight: 100;
-    font-size: 25px;
+    font-weight: 300;
+    font-size: 30px;
     color: #f1f1f1;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #818181;
+    color: dimgrey;
 }
 
 .sidenav .closebtn {
@@ -44,10 +62,43 @@
     margin-left: 50px;
 }
 
+.aboutsection {
+    background-color: lightslategrey;
+}
+
+.abouttext {
+    color: white;
+    font-weight: 500px;
+}
+
+.servicesection {
+    color: white;
+    background-color: #e7c17c;
+}
+
+.contactsection {
+    color: white;
+    background-color: #e7c17c;
+    text-align: center;
+}
+
+form {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.sendbtn {
+    border-radius: 100%;
+    background-color: lightslategray;
+    border-color: lightslategray;
+}
+
+.sendbtn a:hover {}
+
 footer {
     display: block;
     color: white;
-    background-color: #404040;
+    background-color: lightslategray;
 }
 
 .footertext {

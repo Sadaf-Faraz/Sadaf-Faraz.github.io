@@ -20,128 +20,145 @@
 
     <link rel="stylesheet" href="style.css">
 
+
     <title>Prototype</title>
 </head>
 
 <body>
     <div class="container">
         <header>
+
             <!--Mobile Navigation-->
             <div id="mySidenav" class="sidenav">
 
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Work</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <a href="#">About</a>
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <span style="font-size:40px;cursor:pointer;float:right;color:darkgrey;position:fixed;" onclick="openNav()">&#9776;</span>
+            <!--logo -->
+            <a name="work"></a>
+            <h1 class="headertext"> LOGO / TITLE / NAME </h1>
+
+
+
+            <div class="topsection">
+                <h3 class="afterheadertext">
+                    Lorem ipsum dolor sit amet, consectetur</h3>
+
 
             </div>
 
-            <span style="font-size:40px;cursor:pointer;float:right;" onclick="openNav()">&#9776;</span>
-            <!--logo -->
-            <h1 class="headertext"> LOGO / TITLE / NAME </h1>
 
-            <!--summary of what the website is about/what the author does -->
-            <h3 id="summary"> Lorem ipsum dolor sit amet,consectetur adipiscing elit. Proin finibus.</h3>
+    </div>
+    <!--where the style bootstrap container ends-->
+    </header>
+    <!--Work-->
 
-        </header>
-
-        <br>
-        <br>
-        <!--Work-->
-        <!--Stock photos are from freephotos.cc-->
-        <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center"> Work </h4>
-
-        <img src="images/workimg1.jpg" alt="workimg1" style="width:300px;height:300px;" class="img-thumbnail">
-
-        <img src="images/workimg2.jpg" alt="workimg2" style="width:300px;height:300px;" class="img-thumbnail">
-
-
-        <img src="images/workimg3.jpg" alt="workimg3" style="width:300px;height:300px;" class="img-thumbnail">
+    <br>
+    <br>
 
 
 
-        <br><br><br>
-        <!--Services-->
+    <!--Stock photos are from freephotos.cc-->
+    <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center;color:lightslategrey"> Work </h4>
+    <center>
+        <img src="images/workimg1.jpg" alt="workimg1" style="width:300px;height:300px;" class="img-responsive">
 
+        <img src="images/workimg2.jpg" alt="workimg2" style="width:300px;height:300px;" class="img-responsive">
+
+
+        <img src="images/workimg3.jpg" alt="workimg3" style="width:300px;height:300px;" class="img-responsive">
+
+    </center>
+    <!--Service-->
+    <a name="services"></a>
+    <br><br><br>
+
+    <a name="Services"></a>
+    <div class="servicesection">
         <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em;text-align:center;"> Services </h4>
 
-        <h3 style="font-weight: 100; text-align:center;">
+        <h3 class="afterheadertext">
             Lorem ipsum dolor sit amet, consectetur</h3>
         <br>
-        <ul>
-            <li> BRAND STRATEGY </li>
-            <li>PRIMARY LOGO </li>
-            <li>SECONDARY LOGO </li>
-
-        </ul>
-
-        <br>
-        <br>
-
-        <!--Contact-->
-
-        <div class="contact-container text-center">
-            <h4 style="text-decoration:underline;font-weight: 200;  letter-spacing: .1em;"> Contact </h4>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputname">Name</label>
-                        <input type="Name" class="form-control" id="inputEmail4" placeholder="Name">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputemail">Email</label>
-                        <input type="Email" class="form-control" id="inputPassword4" placeholder="Email">
-                    </div>
-                </div>
+        <ul class="servicelist">
+            <ul>
+                <li> BRAND STRATEGY </li>
+                <li>PRIMARY LOGO </li>
+                <li>SECONDARY LOGO </li>
+            </ul>
 
 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="City">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip" placeholder=Zip "">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary" style="background-color:#404040; border-color: #404040">SEND</button>
-            </form>
-
-        </div>
-
-
-
+            <br>
+            <br>
 
     </div>
+
+    <!--About-->
+
+    <a name="about"></a>
+    <br><br><br>
+
+
+    <div class="aboutsection">
+        <div class="container">
+            <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center; color:white;"> About</h4>
+            <center>
+                <img src="images/aboutimg.jpg" style="width:60%;" class="img-responsive"> </center>
+            <p class="abouttext">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+    </div>
+
+
+    <!--Contact-->
+    <a name="contact"></a>
+    <br><br><br>
+
+
+    <div class="contactsection">
+        <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center;"> Contact</h4>
+
+        <h3 class="afterheadertext">Are you ready to get started? </h3>Please feel free to contact me with any questions!
+        <br><br>
+        <div class="container">
+            <center>
+                <form>
+                    <div class="col-md-6">
+                        <label for="inputfirstname">First Name:</label>
+                        <input type="firstname" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class=" col-md-6">
+                        <label for="inputlastname">Last Name:</label>
+                        <input type="lastname" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputemail">E-Mail:</label>
+                        <input type="email" class="form-control" placeholder="E-mail">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputmessage">Message:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Messages"></textarea>
+                    </div>
+                    <center>
+                        <br>
+
+                        <button type="submit" class="btn btn-primary sendbtn">SEND</button>
+                        <br><br>
+                </form>
+        </div>
+    </div>
+
 
     <br><br><br>
-    <!--About-->
-    <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center"> About</h4>
-    <center>
-        <img src="images/aboutimg.jpg" alt="aboutimg" style="width:800px;height:600px;" class="img-fluid">
-    </center>
-    <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-        content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
-        versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-
-    </div>
-
-
     <footer>
 
         <div class="footertext text-center">
@@ -154,7 +171,7 @@
 
 
             <br>
-            <br> designedbysadaf 2018
+            <br> designedbysadaf &copy; 2018
 
         </div>
     </footer>
