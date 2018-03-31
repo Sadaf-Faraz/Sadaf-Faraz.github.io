@@ -25,10 +25,11 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
 
+    <header>
+        <div class="container">
             <!--Mobile Navigation-->
+
             <div id="mySidenav" class="sidenav">
 
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -38,8 +39,10 @@
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
+            <div class="nav-symbol" onclick="openNav()">&#9776;</div>
 
-            <span style="font-size:40px;cursor:pointer;float:right;color:darkgrey;position:fixed;" onclick="openNav()">&#9776;</span>
+
+
             <!--logo -->
             <a name="work"></a>
             <h1 class="headertext"> LOGO / TITLE / NAME </h1>
@@ -54,8 +57,8 @@
             </div>
 
 
-    </div>
-    <!--where the style bootstrap container ends-->
+        </div>
+        <!--where the style bootstrap container ends-->
     </header>
     <!--Work-->
 
@@ -67,36 +70,59 @@
     <!--Stock photos are from freephotos.cc-->
     <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center;color:lightslategrey"> Work </h4>
     <center>
-        <img src="images/workimg1.jpg" alt="workimg1" style="width:300px;height:300px;" class="img-responsive">
-
-        <img src="images/workimg2.jpg" alt="workimg2" style="width:300px;height:300px;" class="img-responsive">
-
-
-        <img src="images/workimg3.jpg" alt="workimg3" style="width:300px;height:300px;" class="img-responsive">
-
+        <a href="#"><img src="images/workimg1.jpg" style="width:300px;height:300px" class="img-responsive"> </a>
+        <a href="#"> <img src="images/workimg2.jpg" style="width:300px;height:300px" class="img-responsive">
+        </a>
+        <a href="#"><img src="images/workimg3.jpg" style="width:300px;height:300px" class="img-responsive"> </a>
     </center>
     <!--Service-->
-    <a name="services"></a>
-    <br><br><br>
+    <div class="container">
+        <a name="services"></a>
+        <br><br><br>
 
-    <a name="Services"></a>
-    <div class="servicesection">
-        <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em;text-align:center;"> Services </h4>
+        <a name="Services"></a>
+        <div class="servicesection">
+            <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em;text-align:center;"> Services </h4>
 
-        <h3 class="afterheadertext">
-            Lorem ipsum dolor sit amet, consectetur</h3>
+            <h3 class="afterheadertext">
+                Lorem ipsum dolor sit amet, consectetur</h3>
+            <br>
+
+            <div class="row">
+                <div class="column">
+                    <h2>First Column</h2>
+                    <ul>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>Second Column</h2>
+                    <ul>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>Third Column</h2>
+                    <ul>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
         <br>
-        <ul class="servicelist">
-            <ul>
-                <li> BRAND STRATEGY </li>
-                <li>PRIMARY LOGO </li>
-                <li>SECONDARY LOGO </li>
-            </ul>
 
-
-            <br>
-            <br>
-
+    </div>
     </div>
 
     <!--About-->
@@ -109,7 +135,9 @@
         <div class="container">
             <h4 style="text-decoration:underline;font-weight: 200; letter-spacing: .1em; text-align: center; color:white;"> About</h4>
             <center>
-                <img src="images/aboutimg.jpg" style="width:60%;" class="img-responsive"> </center>
+                <img src="images/aboutimg.jpg" style="width:60%" class="img-responsive"> </center>
+
+            <br>
             <p class="abouttext">
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
                 content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
@@ -128,35 +156,36 @@
 
         <h3 class="afterheadertext">Are you ready to get started? </h3>Please feel free to contact me with any questions!
         <br><br>
-        <div class="container">
-            <center>
-                <form>
-                    <div class="col-md-6">
-                        <label for="inputfirstname">First Name:</label>
-                        <input type="firstname" class="form-control" placeholder="First Name">
-                    </div>
-                    <div class=" col-md-6">
-                        <label for="inputlastname">Last Name:</label>
-                        <input type="lastname" class="form-control" placeholder="Last Name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputemail">E-Mail:</label>
-                        <input type="email" class="form-control" placeholder="E-mail">
-                    </div>
 
-                    <div class="col-md-6">
-                        <label for="inputmessage">Message:</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Messages"></textarea>
-                    </div>
-                    <center>
-                        <br>
+        <center>
+            <form>
+                <div class="col-md-6">
+                    <label for="inputfirstname">First Name:</label>
+                    <input type="firstname" class="form-control" placeholder="First Name">
+                </div>
+                <div class=" col-md-6">
+                    <label for="inputlastname">Last Name:</label>
+                    <input type="lastname" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputemail">E-Mail:</label>
+                    <input type="email" class="form-control" placeholder="E-mail">
+                </div>
 
-                        <button type="submit" class="btn btn-primary sendbtn">SEND</button>
-                        <br><br>
-                </form>
-        </div>
+                <div class="col-md-6">
+                    <label for="inputmessage">Message:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Messages"></textarea>
+                </div>
+                <center>
+                    <br>
+
+                    <button type="submit" class="btn btn-primary sendbtn">SEND</button>
+                    <br><br>
+            </form>
+
+
     </div>
-
+    </div>
 
     <br><br><br>
     <footer>

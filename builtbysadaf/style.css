@@ -26,6 +26,12 @@
     color: white;
 }
 
+.nav-symbol {
+    font-size: 30px;
+    cursor: pointer;
+    color: darkgrey;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -34,6 +40,7 @@
     right: 0;
     background-color: lightslategray;
     overflow-x: hidden;
+    z-index: 5;
     transition: 0.5s;
     padding-top: 60px;
     margin-top: 0px;
@@ -64,6 +71,7 @@
 
 .aboutsection {
     background-color: lightslategrey;
+    padding: 30px 40px 50px 40px;
 }
 
 .abouttext {
@@ -71,12 +79,24 @@
     font-weight: 500px;
 }
 
+img:hover {
+    opacity: 0.5;
+}
+
 .servicesection {
     color: white;
     background-color: #e7c17c;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.column {
+    padding: 30px 40px 50px 40px;
+    margin: 10px;
 }
 
 .contactsection {
+    padding-top: 10px;
     color: white;
     background-color: #e7c17c;
     text-align: center;
@@ -105,4 +125,5 @@ footer {
     text-align: center;
     padding: 14px;
     font-weight: 400;
+    font-size: 15px;
 }
