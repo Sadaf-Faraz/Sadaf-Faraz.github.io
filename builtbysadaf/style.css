@@ -107,11 +107,19 @@ form {
     font-weight: 100;
 }
 
-.sendbtn {
-    border-radius: 100%;
-    background-color: lightslategray;
-    border-color: lightslategray;
-}
+
+    .sendbtn {
+        background-color: lightslategray;
+        border-color: lightslategray;
+        border-radius: 0;
+        letter-spacing: .100em;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+
 
 .sendbtn a:hover {}
 
