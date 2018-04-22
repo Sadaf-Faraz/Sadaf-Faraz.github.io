@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var getText = [ "Designed by Sadaf....COMING SOON!"];
+    var getText = [ "Designed By Sadaf....will launch very soon!"];
 
    
     
