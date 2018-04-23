@@ -1,166 +1,88 @@
-#headerText {
-    font-family: 'Trirong', cursive;
-    font-weight: 100;
-    font-size: 50px;
+
+body{
+    background-color: #fffcfc;
     text-align: center;
-}
-
-#construction {
-    text-align: center;
-    padding: 20px;
-}
-
-h2,
-h3 {
-    color: cadetblue;
-    font-family: 'Trirong', serif;
-}
-
-.bio {
-    font: 'crimson text', serif;
-    color: white;
-    font-size: 17px;
-}
-
-.contact {
-    text-align: center;
-    color: black;
-    font-family: 'Old Standard TT', serif;
-}
-
-body {
-    background-color: white;
-    margin: 0;
-}
-
-.sidebar {
-    list-style-type: none;
-    display: inline-flex;
-    float: right;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-right: 9px;
-    padding-left: 9px;
-}
-
-.sidebar a:hover {
-    color: lightpink;
-}
-
-.sidebar a {
-    color: black;
-    text-decoration: none;
-    padding: 30px;
-    font-family: 'Trirong', serif;
-    font-size: 16px;
-    margin-right: 30px;
-    position: relative;
-}
-
-.intro {
-    font-family: 'Tangerine', cursive;
-    color: black;
-    text-decoration: none;
-    font-size: 50px;
-    font-weight: bold;
-    float: left;
-    margin: 0px;
-    padding: 0px;
-}
-
-.intro a {
-    font-family: 'Tangerine', cursive;
-    color: black;
-    text-decoration: none;
-}
-
-.header {
-    padding-bottom: 9%;
-}
+     font-weight: 50;
+     flex: 1;
+    color: midnightblue;
+    font-size: 14px;
+   
+ }
+ 
+ h1{
+   font-family: 'Playfair Display', serif;
+   font-style: italic;
+   color: midnightblue;
+ 
+ }
+ 
+ .headertext { 
+     font-family: 'Playfair Display', serif;
+     font-style: italic;
+     color: midnightblue;
+  
+ 
+ }
+ 
+ 
+ .main-background {
+   background-color: #fbf1ed;
+   border-bottom: 1px solid 	MistyRose  ;
+ }
+ span {
+     border-right: .05em solid;
+     padding-left: 10px;
+     animation: caret 1s steps(1) infinite;
+    
+   }
+ 
+   a{
+ color: midnightblue;
+ 
+ 
+   }
+ 
+ a:hover{
+  color: #BC8F8F; 
+ ;
+ 
+ }
+   .bodytitle{
+    
+       font-weight: 150;
+       padding: 20px;
+       color: midnightblue;
+   }
+ 
+   img{
+   
+    width: 50%;
+   }
+ 
+ .bio-temp{
+ 
+  text-decoration:#BC8F8F wavy underline;
+   
+ }
+ 
 
 
-/* About me */
-
-.me {
-    margin-right: 0;
-    margin-left: 0;
+footer{
+  background-color: #fbf1ed;
+  border-top:1px solid  mistyrose;
+  padding: 32px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
 }
 
 
-/*img.left {
-    padding-left: 18px;
-    padding-right: 18px;
-    margin-bottom: 0;
-    float: left;
-}*/
-
-p.about {
-    padding: 0;
-    margin: 0;
-    font-family: 'Old Standard TT', serif;
-    line-height: 180%;
-    width: 80%;
-}
+ 
 
 
-/*Explanation of work page*/
-
-#moreinfo {
-    float: right;
-    vertical-align: middle;
-    font-family: 'Old Standard TT', serif;
-}
-
-
-/* Social Media */
-
-.insta a {
-    text-decoration-line: none;
-}
-
-
-/*Animation */
-
-#slide {
-    font-family: 'Tangerine', cursive;
-    color: black;
-    font-size: 100px;
-    font-weight: bold;
-    animation-duration: 2s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-/*Mobile */
-
-@media screen and (max-width: 736px) {
-    .sidebar a {
-        margin-right: -33%;
-        font-size: 12px
-    }
-    .header {
-        padding-bottom: 40%;
-    }
-    img.left {
-        float: initial;
-        width: 65%;
-        height: 50%;
-    }
-}
+ 
+   @keyframes caret {
+     50% {
+       border-color: transparent;
+     }
+   }
+ 
