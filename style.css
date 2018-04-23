@@ -69,17 +69,13 @@ body{
 
 footer{
   background-color: #fbf1ed;
-  border-top:1px solid  mistyrose;
+  border-top: 1px solid  mistyrose;
   padding: 32px;
   font-family: 'Playfair Display', serif;
   font-size: 15px;
 }
 
 
- 
-
-
- 
    @keyframes caret {
      50% {
        border-color: transparent;
