@@ -100,7 +100,7 @@ body{
  
  .main-background {
    background-color:white;
-   border-bottom: 1px solid 	MistyRose  ;
+   border-bottom: 1px solid black  ;
  }
  span {
      border-right: .05em solid;
@@ -142,7 +142,7 @@ body{
 
 footer{
  
-  border-top: 1px solid  mistyrose;
+  border-top: 1px solid  black;
   padding: 32px;
   font-family: 'Playfair Display', serif;
   font-size: 15px;
