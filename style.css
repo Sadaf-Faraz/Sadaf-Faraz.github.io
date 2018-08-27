@@ -138,6 +138,7 @@ body{
    
  }
  
+ 
 
 
 footer{
@@ -148,6 +149,50 @@ footer{
   font-size: 15px;
 }
 
+
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+float: left;
+  width: 180px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
+  
+
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+      width: 100%;
+     
+  }
+  
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
    @keyframes caret {
      50% {
