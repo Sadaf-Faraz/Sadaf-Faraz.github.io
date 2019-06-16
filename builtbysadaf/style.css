@@ -91,9 +91,11 @@ img:hover {
 }
 
 .column {
-    padding: 30px 40px 50px 40px;
-    margin: 10px;
+justify-content: center;
+padding: 60px;
+ margin: 10px;
 }
+
 
 .contactsection {
     padding-top: 10px;
@@ -121,7 +123,7 @@ form {
     
 
 
-.sendbtn a:hover {}
+
 
 footer {
     display: block;
@@ -134,4 +136,49 @@ footer {
     padding: 14px;
     font-weight: 400;
     font-size: 15px;
+}
+
+#aboutimg{
+    width:60%;
+}
+
+#workimg1{
+    width: 30%;
+}
+
+#workimg2{
+    width: 31%;
+}
+
+#workimg3{
+    width: 32%;
+}
+
+
+@media screen and (min-width:0px) and (max-width:768px) { /*all other phones*/
+    .column{
+   padding: 12px;
+}
+
+#aboutimg{
+    width: 90%;
+}
+#workimg1{
+    width: 50%
+}
+#workimg2{
+    width: 51%
+}
+#workimg3{
+    width: 52%
+}
+}
+
+@media screen and (min-width:1024px) and (max-width:1024px){ /*ipad pro*/
+    .column{
+    padding: 40px;
+}
+
+
+
 }

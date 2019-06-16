@@ -1,118 +1,181 @@
+/* universal/ resets the padding and margin to 0*/
 
-   /* body */
-
-   body{
-    font-family: 'Lato', sans-serif;
-    background-color:white;
-    font-weight: 50;
-    text-align: center;
-    flex:1;
-    font-size: 14px;
-   text-decoration: none;
- 
- }
-
- .bodytitle{
-    
-  font-weight: 150;
-  padding: 20px;
- }
-
-
- .main-background {
-  background-color:white;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+/* body */
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+  font-weight: 40;
+  text-align: center;
+  flex: 1;
+  text-decoration: none;
+}
+
+.bodytitle {
+  font-weight: 150;
+  padding: 20px;
+}
+
+.main-background {
+  background-color: white;
+}
 
 /*paragraph*/
 
-#about{
-
-  font-size: 18px;
-  padding: 12px;
-  line-height: 32px;
-
-
-  }
-  
-
-
+#about {
+  font-size: 20px;
+  padding: 10px;
+  line-height: 35px;
+}
 
 /*nav */
 
-.nav-link{
-  font-family: 'Lato', sans-serif;
-   font-size: 15px;
-  
- }
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
 
-a{
+.nav-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+}
+
+nav li {
+  text-align: center;
+}
+
+a {
   color: black;
-  
-    }
- 
- 
-   a:hover{
+}
+
+a:hover {
   font-style: italic;
+  color: lightslategray;
+}
 
-   } 
+/* header */
 
+.main-header {
+  padding: 14px;
+  text-align: center;
+}
 
-
- 
-  /* header */
-
- 
- h1{
+h1 {
   font-family: 'Lato', sans-serif;
-   font-weight: 500;
-   
- 
- }
- 
- h2{ 
-  font-family: 'Tangerine', cursive;  
- }
- 
+  font-weight: 500;
+}
 
- #welcome_header{ 
-  font-family: 'Tangerine', cursive;  
-  font-size: 110px;
-    
-  
- 
- }
- 
+h2 {
+  font-family: 'Tangerine', cursive;
+}
 
- /*contact form*/
+#welcome_header h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 45px;
+  padding: 50px;
+}
 
+/*contact form*/
 
-   input, textarea {
-     margin: 10px;
-     padding: 12px;
-     width: 70%;
-   }
-   
+#form-wrap {
+  display: block;
+  text-align: center;
+}
 
+form {
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-   /*media queries*/
+.form-control {
+  background: transparent;
+  outline: none;
+  border: 1px solid grey;
+  font-size: 18px;
+  width: 270px;
+  margin-bottom: 10px;
+}
+
+.msg {
+  height: 200px;
+}
+
+input {
+  height: 45px;
+}
+
+.btn-info {
+  padding: 10px 18px;
+}
+
+/*footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 0;
+}
+
+footer ul li {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin-right: 8px;
+}
+
+#socials {
+  font-size: 30px;
+  color: black;
+}
+
+/*media queries*/
+
+@media only screen and (min-width: 480px) {
+  #welcome_header h1 {
+    font-size: 75px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  .form-control {
+    width: 500px;
+    background: transparent;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #welcome_header h1 {
+    font-size: 105px;
+    position: relative;
+    top: 80px;
+  }
+}
 
 @media only screen and (max-width: 700px) {
   .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
+    width: 49.99999%;
+    margin: 6px 0;
   }
-  
-
 }
 
 @media only screen and (max-width: 500px) {
   .responsive {
-      width: 100%;
-     
+    width: 100%;
   }
-  
-
 }
 
 .clearfix:after {
@@ -121,78 +184,90 @@ a{
   clear: both;
 }
 
-
 /* animation */
 
-.animation{
+.animation {
   animation: change 15s infinite;
 }
-  @keyframes change {
 
-   0%{background-color:lightpink}
-   25%{background-color:lavender}
-   50%{background-color:peachpuff}
-  75%{background-color:floralwhite}
- 100%{background-color:#BC8F8F}
- 
+@keyframes change {
+  0% {
+    background-color: lightpink
   }
-
-  span {
-   border-right: .05em solid;
-   padding-left: 10px;
-   animation: caret 1s steps(1) infinite;
-  
- }
-
-
-   @keyframes caret {
-     50% {
-       border-color: transparent;
-     }
-   }
-   
-   
-   
-
-   body{
-    animation: fadein 0.3s;
-    -moz-animation: fadein 0.3s; /* Firefox */
-    -webkit-animation: fadein 0.3s; /* Safari and Chrome */
-    -o-animation: fadein 0.3s; /* Opera */
+  25% {
+    background-color: lavender
+  }
+  50% {
+    background-color: peachpuff
+  }
+  75% {
+    background-color: floralwhite
+  }
+  100% {
+    background-color: #BC8F8F
+  }
 }
+
+span {
+  border-right: .05em solid;
+  padding-left: 10px;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+body {
+  animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s;
+  /* Firefox */
+  -webkit-animation: fadein 0.3s;
+  /* Safari and Chrome */
+  -o-animation: fadein 0.3s;
+  /* Opera */
+}
+
 @keyframes fadein {
-    from {
-        opacity:0.3;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0.3;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0.3;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0.3;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*
 

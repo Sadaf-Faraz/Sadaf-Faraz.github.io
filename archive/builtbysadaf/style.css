@@ -1,0 +1,137 @@
+.topsection {
+    background-color: #e7c17c;
+    color: white;
+    border-radius: 5px;
+}
+
+.headertext {
+    font-weight: 100;
+    text-align: center;
+    color: lightslategray;
+}
+
+.afterheadertext {
+    text-align: center;
+    font-weight: 100;
+}
+
+.menustyle {
+    background-color: lightslategray;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.menustyle a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-symbol {
+    font-size: 30px;
+    cursor: pointer;
+    color: darkgrey;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightslategray;
+    overflow-x: hidden;
+    z-index: 5;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 30px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: dimgrey;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.aboutsection {
+    background-color: lightslategrey;
+    padding: 30px 40px 50px 40px;
+}
+
+.abouttext {
+    color: white;
+    font-weight: 500px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.servicesection {
+    color: white;
+    background-color: #e7c17c;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.column {
+    padding: 30px 40px 50px 40px;
+    margin: 10px;
+}
+
+.contactsection {
+    padding-top: 10px;
+    color: white;
+    background-color: #e7c17c;
+    text-align: center;
+}
+
+form {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+    .sendbtn {
+        background-color: lightslategray;
+        border-color: lightslategray;
+        border-radius: 0;
+        letter-spacing: .100em;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+
+
+.sendbtn a:hover {}
+
+footer {
+    display: block;
+    color: white;
+    background-color: lightslategray;
+}
+
+.footertext {
+    text-align: center;
+    padding: 14px;
+    font-weight: 400;
+    font-size: 15px;
+}

@@ -1,0 +1,214 @@
+
+   /* body */
+
+   body{
+    font-family: 'Lato', sans-serif;
+    background-color:white;
+    font-weight: 50;
+    text-align: center;
+    flex:1;
+    font-size: 14px;
+   text-decoration: none;
+ 
+ }
+
+ .bodytitle{
+    
+  font-weight: 150;
+  padding: 20px;
+ }
+
+
+ .main-background {
+  background-color:white;
+}
+
+
+/*paragraph*/
+
+#about{
+
+  font-size: 18px;
+  padding: 12px;
+  line-height: 32px;
+
+
+  }
+  
+
+
+
+/*nav */
+
+.nav-link{
+  font-family: 'Lato', sans-serif;
+   font-size: 15px;
+  
+ }
+
+a{
+  color: black;
+  
+    }
+ 
+ 
+   a:hover{
+  font-style: italic;
+
+   } 
+
+
+
+ 
+  /* header */
+
+ 
+ h1{
+  font-family: 'Lato', sans-serif;
+   font-weight: 500;
+   
+ 
+ }
+ 
+ h2{ 
+  font-family: 'Tangerine', cursive;  
+ }
+ 
+
+ #welcome_header{ 
+  font-family: 'Tangerine', cursive;  
+  font-size: 110px;
+    
+  
+ 
+ }
+ 
+
+ /*contact form*/
+
+
+   input, textarea {
+     margin: 10px;
+     padding: 12px;
+     width: 70%;
+   }
+   
+
+
+   /*media queries*/
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
+  
+
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+      width: 100%;
+     
+  }
+  
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* animation */
+
+.animation{
+  animation: change 15s infinite;
+}
+  @keyframes change {
+
+   0%{background-color:lightpink}
+   25%{background-color:lavender}
+   50%{background-color:peachpuff}
+  75%{background-color:floralwhite}
+ 100%{background-color:#BC8F8F}
+ 
+  }
+
+  span {
+   border-right: .05em solid;
+   padding-left: 10px;
+   animation: caret 1s steps(1) infinite;
+  
+ }
+
+
+   @keyframes caret {
+     50% {
+       border-color: transparent;
+     }
+   }
+   
+   
+   
+
+   body{
+    animation: fadein 0.3s;
+    -moz-animation: fadein 0.3s; /* Firefox */
+    -webkit-animation: fadein 0.3s; /* Safari and Chrome */
+    -o-animation: fadein 0.3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0.3;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0.3;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0.3;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+float: left;
+  width: 180px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+
+}
+*/
