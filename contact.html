@@ -72,9 +72,12 @@
 
       <div class="col-md-6">
 
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Insert Message Here!" required></textarea>
-      </div>
+        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="6" placeholder="Insert Message Here!"
+          required></textarea>
 
+      </div>
+      <input type="hidden" name="_gotcha">
+      <!-- use this to prevent spam -->
       <br>
       <center>
         <button type="submit" class="btn btn-primary sendbtn">SUBMIT</button>
